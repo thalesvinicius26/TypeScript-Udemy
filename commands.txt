@@ -1,0 +1,11 @@
+tsc = Compila o arquivo ts
+node = Executa um arquivo js
+npm i -g = Instala pacotes no escopo global
+npm init -y = Inicia um projeto
+npm i -s live-server = Inicia um servidor de dev
+tsc --init = Cria tsconfig.json
+No arquivo package.json foi criado um script para rodar o node = "start": "live-server"
+tsc -w = Monitora todos arquivos ts em busca de mudança e então compila em js
+
+// Exemplo de uma compilação juntando vários arquivos
+tsc -w --outfile namespaces/namespaces.js namespaces/geometriaCirc.ts namespaces/geometriaRect.ts namespaces/namespaces.ts
